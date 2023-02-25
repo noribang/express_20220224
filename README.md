@@ -4,7 +4,10 @@
 Start new project.
 ```bash
 npm init -y
-
+```
+Install express server.
+```bash
+npm install express
 ```
 
 
