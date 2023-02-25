@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/noribang/express_20220224/issues"
   },
-  "homepage": "https://github.com/noribang/express_20220224#readme"
+  "homepage": "https://github.com/noribang/express_20220224#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
