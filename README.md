@@ -1,6 +1,10 @@
 # express_20220224
 
 ## Installation
+Create new project directory.
+```bash
+mkdir new_express_project
+```
 Start new project.
 ```bash
 npm init -y
@@ -9,9 +13,13 @@ Install express server.
 ```bash
 npm install express
 ```
-
+Create file to write express server code in.
+```bash
+touch main.js
+```
 
 ## Usage
+In main.js file:
 ```javascript
 
 const express = require('express')
