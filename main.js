@@ -1,8 +1,8 @@
 const express = require('express')
 const app = express()
 
-// Create route '/'
-// Create GET request response
+// Create route '/'.
+// Create GET request response for route '/'.
 app.get('/', (req, res) => {
     res.send("Welcome to the home page.")
 })
