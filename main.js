@@ -17,9 +17,11 @@ app.get('/', (req, res) => {
         </form>
     `)
 })
-
-
-
+// Route '/result'.
+// POST request.
+app.post('/result', (req, res) => {
+    res.send("Thank you for submitting the form.")
+})
 
 // Route '/about'
 // Get request.
