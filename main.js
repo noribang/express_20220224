@@ -3,22 +3,29 @@ const express = require('express')
 // Create new instance of express.
 const app = express()
 
+// Application level.
 // Middleware globally.
 // Enables accessing body parameter data from post request from form.
 app.use(express.urlencoded({extended: false}))
 
+// Middleware individual function.
+function getWeather(req, res, next) {
+    req.visitorWeather = false
+    next()
+}
 /// Route '/'.
 /// Get request.
 // app.get("/", (req, res) => {
 //     res.send("Welcome to our home page.")
 // })
-app.get('/', (req, res) => {
+app.get('/', getWeather, (req, res) => {
     res.send(`
         <h1>What color is the sky on a clear day?</h1>
         <form action="/result" method="POST">
             <input type="text" name="color">
             <button>Submit Answer</button>
         </form>
+        <p>${req.visitorWeather ? "It is raining." : "It is not raining."}</p>
     `)
 })
 // Route '/result'.
