@@ -22,6 +22,11 @@ app.get('/', (req, res) => {
 app.post('/result', (req, res) => {
     res.send("Thank you for submitting the form.")
 })
+// Route '/result'
+// GET request.
+app.get('/result', (req, res) => {
+    res.send("Why are visiting this URL?")
+})
 
 // Route '/about'
 // Get request.
@@ -31,4 +36,4 @@ app.get('/about', (req, res) => {
 
 
 // Server listen at port 4000.
-app.listen(3000)
+app.listen(4000)
