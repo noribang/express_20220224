@@ -5,7 +5,7 @@ Create new project directory.
 ```bash
 mkdir new_express_project
 ```
-Start new project.
+Start new node express project.
 ```bash
 npm init -y
 ```
@@ -17,6 +17,25 @@ Create file to write express server code in.
 ```bash
 touch main.js
 ```
+
+## Local server
+Start local server.
+```bash
+node <file_name>
+e.g.
+node main.js
+```
+Stop local server.
+```bash
+ctrl + c
+```
+Install nodemon. Allows you to not have to keep stopping and re-starting server after every change to files.  
+```bash
+npx nodemon <file_name>
+e.g.
+npx nodemon main.js
+```
+
 
 ## Usage
 In main.js file:
