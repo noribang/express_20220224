@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
 // POST request.
 app.post('/result', (req, res) => {
     // res.send("Thank you for submitting the form.")
-    if (req.body.color === "blue") {
+    if (req.body.color.trim().toUpperCase() === "BLUE") {
         res.send("That is correct!")
     } else {
         res.send("Incorrect, please try again.")
