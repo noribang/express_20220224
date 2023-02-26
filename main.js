@@ -3,6 +3,10 @@ const express = require('express')
 // Create new instance of express.
 const app = express()
 
+// Middleware globally.
+// Enables accessing body parameter data from post request from form.
+app.use(express.urlencoded({extended: false}))
+
 /// Route '/'.
 /// Get request.
 // app.get("/", (req, res) => {
