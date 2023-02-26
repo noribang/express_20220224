@@ -24,7 +24,13 @@ app.get('/', (req, res) => {
 // Route '/result'.
 // POST request.
 app.post('/result', (req, res) => {
-    res.send("Thank you for submitting the form.")
+    // res.send("Thank you for submitting the form.")
+    if (req.body.color === "blue") {
+        res.send("That is correct!")
+    } else {
+        res.send("Incorrect, please try again.")
+    }
+
 })
 // Route '/result'
 // GET request.
